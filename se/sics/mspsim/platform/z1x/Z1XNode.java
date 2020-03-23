@@ -6,8 +6,8 @@ import se.sics.mspsim.chip.CC2420;
 //import se.sics.mspsim.chip.FileStorage;
 import se.sics.mspsim.chip.Leds;
 import se.sics.mspsim.chip.M25P80;
-//import se.sics.mspsim.config.MSP430f5437Config;
-import se.sics.mspsim.config.MSP430f5439Config;
+import se.sics.mspsim.config.MSP430f5437Config;
+//import se.sics.mspsim.config.MSP430f5439Config;
 import se.sics.mspsim.core.EmulationException;
 import se.sics.mspsim.core.IOPort;
 import se.sics.mspsim.core.IOUnit;
@@ -71,8 +71,8 @@ public class Z1XNode extends GenericNode implements PortListener, USARTListener 
     private CC2420 radio;
 
     public Z1XNode() {
-//        super("Z1X", new MSP430f5437Config());
-        super("Z1X", new MSP430f5439Config());
+        super("Z1X", new MSP430f5437Config());
+//        super("Z1X", new MSP430f5439Config());
         setMode(MODE_LEDS_OFF);
     }
 
